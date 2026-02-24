@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: white;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGEN SUPERIOR */
+.top-image {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.top-image img {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+/* INFORMACIÓN */
+.info-section {
+  flex: 2;
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-section h1 {
+  font-size: 3rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.info-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.details p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact h3 {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.contact a {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  color: white;
+}
+
+/* IMAGEN INFERIOR */
+.bottom-image {
+  flex: 3;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-image img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* RESPONSIVE CELULAR */
+@media (max-width: 768px) {
+
+  .container {
+    height: auto;
+  }
+
+  .top-image,
+  .info-section,
+  .bottom-image {
+    flex: none;
+    padding: 20px;
+  }
+
+  .top-image img,
+  .bottom-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .info-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact a {
+    font-size: 1.5rem;
+  }
+
+}
